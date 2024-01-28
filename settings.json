@@ -1,0 +1,103 @@
+{
+  "authKey" : "",
+
+  "telegram" : {
+    "chatId" : 0,
+    "botToken" : ""
+  },
+
+  "accounts" : {
+    "randomBridges" : [ "stargate" ],
+    "delayBetweenAccounts" : [60, 180],
+    "delayActivity" : [15, 60],
+    "cycleDelay" : 600,
+    "cycles" : 5,
+    "slippage" : 5.0,
+    "minUsdcBalance" : 0.1,
+    "bscGwei" : 3
+  },
+
+  "stargate": {
+    "fromNetworks": [ "bsc", "avax", "arbitrum", "optimism", "polygon" ],
+    "toNetworks": [ "bsc", "avax", "arbitrum", "optimism", "polygon" ],
+    "bridgeAmountPercent" : 100.0
+  },
+
+  "btc.b" : {
+    "fromNetworks": [ "bsc", "polygon", "avax", "arbitrum", "optimism" ],
+    "toNetworks": [ "bsc", "polygon", "avax", "arbitrum", "optimism" ],
+    "bridgeAmountPercent" : 100.0
+  },
+
+  "woofi" : {
+    "fromNetworks": ["polygon", "avax", "arbitrum", "optimism" ],
+    "toNetworks": [ "polygon", "avax", "arbitrum", "optimism" ],
+    "bridgeAmountPercent" : 100.0
+  },
+
+  "eur.b" : {
+    "fromNetworks": [ "bsc", "polygon", "avax", "arbitrum", "optimism" ],
+    "toNetworks": [ "bsc", "polygon", "avax", "arbitrum", "optimism" ],
+    "bridgeAmountPercent" : 100.0
+  },
+
+  "testnet" : {
+    "fromNetwork" : "arbitrum",
+    "nativeMinAmount" : 0.0003,
+    "nativeMaxAmount" : 0.0004
+  },
+
+  "aptos" : {
+    "fromNetworks" : ["polygon", "avax", "arbitrum", "optimism" ],
+    "bridgeAmountPercent" : 0.5
+  },
+
+  "harmony" : {
+    "nativeMinAmount" : 0.001,
+    "nativeMaxAmount" : 0.002
+  },
+
+  "coreDao" : {
+    "bridgeAmountPercent" : 10.0
+  },
+
+  "swap" : {
+    "chain" : "avax",
+    "tokenFrom" : "USDC",
+    "tokenTo" : "BTC",
+    "percentOfTokenBalance" : 1.0
+  },
+
+  "staking" : {
+    "fromNetwork" : "avax",
+    "lockPeriod" : 2
+  },
+
+  "refuel" : {
+    "nativeMinAmount" : 0.6,
+    "nativeMaxAmount" : 0.7,
+    "fromNetwork" : "avax",
+    "toNetworks": [ "arbitrum", "bsc", "optimism", "fantom", "polygon" ]
+  },
+
+  "fee" : {
+    "arbitrum": 0.002,
+    "optimism": 0.001,
+    "polygon": 3.0,
+    "avax": 0.3,
+    "fantom": 3.0,
+    "bsc": 0.01,
+    "coredao" : 0.9
+  },
+
+  "rpc": {
+    "bsc": "https://rpc.ankr.com/bsc",
+    "avax": "https://avalanche-c-chain.publicnode.com",
+    "polygon": "https://polygon.blockpi.network/v1/rpc/public",
+    "arbitrum": "https://arbitrum.blockpi.network/v1/rpc/public",
+    "optimism": "https://rpc.ankr.com/optimism",
+    "fantom": "https://fantom.api.onfinality.io/public",
+    "aptos" : "https://fullnode.mainnet.aptoslabs.com/",
+    "coredao" : "https://rpc.coredao.org"
+  }
+}
